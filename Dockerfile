@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.4.0-runtime-ubuntu22.04
+FROM pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime
 WORKDIR /comfyui
 COPY . .
 RUN apt update

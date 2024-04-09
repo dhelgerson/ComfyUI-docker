@@ -3,6 +3,9 @@ services:
     build: .
     ports:
       - "8188:8188"
+    volumes:
+      - ./models:/comfyui/models
+      - ./output:/comfyui/output
     deploy:
       resources:
         reservations:
