@@ -4,9 +4,10 @@ services:
     ports:
       - "8188:8188"
     volumes:
-      - ./models:/comfyui/models
-      - ./output:/comfyui/output
-      - ./custom_nodes:/comfyui/custom_nodes
+      - ./:/comfyui
+      # - ./models:/comfyui/models
+      # - ./output:/comfyui/output
+      # - ./custom_nodes:/comfyui/custom_nodes
     deploy:
       resources:
         reservations:
