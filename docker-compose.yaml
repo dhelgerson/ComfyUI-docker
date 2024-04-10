@@ -5,9 +5,6 @@ services:
       - "8188:8188"
     volumes:
       - ./:/comfyui
-      # - ./models:/comfyui/models
-      # - ./output:/comfyui/output
-      # - ./custom_nodes:/comfyui/custom_nodes
     deploy:
       resources:
         reservations:
