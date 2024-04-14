@@ -1,6 +1,8 @@
 services:
   comfyui:
+    tty: true
     build: .
+    # user: ${MY_UID}:${MY_GID}
     ports:
       - "8188:8188"
     volumes:
